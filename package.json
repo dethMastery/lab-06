@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node _dist/app.js",
     "build": "tsc",
-    "dev": "tsc && node _dist/app.js"
+    "dev": "tsc && node _dist/app.js",
+    "dev:github": "tsc && node _dist/src/githubQuery/app.js",
+    "dev:line": "tsc && node _dist/src/lineMessage/app.js"
   },
   "keywords": [],
   "author": "dethz",
