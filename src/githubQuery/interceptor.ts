@@ -10,8 +10,6 @@ axios.interceptors.request.use(async (config: any) => {
   config.meta = config.meta || {};
   config.meta.requestStartedAt = new Date().getTime();
 
-  console.log(config.url);
-
   return config;
 });
 
