@@ -4,7 +4,7 @@ import env from "dotenv"
 env.config()
 let envData = process.env
 
-axios.create().interceptors.request.use(async (config: any)=> {
+axios.interceptors.request.use(async (config: any) => {
   config.headers = { 
     'Authorization': envData.AUTH_KEY,
     'Content-Type': 'application/x-www-form-urlencoded'
